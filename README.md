@@ -1,4 +1,12 @@
- ##Creating a repo on your first machine
+ # My Dotfiles
+ 
+ ![my desktop](/.screenshots/scr-1.png "my desktop")
+ 
+ ## What Are Dotfiles?
+ 
+ Dotfiles are the customization files that are used to personalize your Linux or other Unix-based system.  You can tell that a file is a dotfile because the name of the file will begin with a period–a dot!  The period at the beginning of a filename or directory name indicates that it is a hidden file or directory.  This repository contains my personal dotfiles.  They are stored here for convenience so that I may quickly access them on new machines or new installs.  Also, others may find some of my configurations helpful in customizing their own dotfiles.
+ 
+ ## Creating a repo on your first machine
  
  So to start out, let’s assume you have some files in your home directory that you want to put in your dotfiles repo.
  
@@ -130,7 +138,21 @@ Now that git shows some untracked changes, we can add the `.gitignore file` and 
  
  Then you can add all what you want. With command `echo '!.gnupg/' >> .gitignore` or just edit `.gitignore` by any text editor. Then we can push this up to your Git host of choice.
  
-##Cloning this repo on your second machine
+ ```
+ ~   main   git remote add origin git@github.com:vohol/dotfiles.git
+ ~   main   git push --set-upstream origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 3.02 KiB | 3.02 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:vohol/dotfiles.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+ ```
+ 
+## Cloning this repo on your second machine
 
 Ok, so now let’s move to machine two, and copy these dotfiles down. 
 

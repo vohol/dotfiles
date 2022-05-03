@@ -1,0 +1,53 @@
+How to exit from nvim?
+
+:q! - exit without saveing;
+:wq - exit and save;
+
+Exit without saveing:
+
+:quit
+:q
+:exit
+:x
+ZZ
+
+
+h j k l - navigation in normal mode;
+
+gg - go to the first line in the document;
+G - go to the last line in the document;
+
+i - go to insert mode;
+Esc or Esc-Esc - exit from insert mode;
+**jk ii - custom;
+
+v - go to visual mode;
+
+0 - go to the first character in line;
+2G - go to 2 line;
+56G - go to 56 line;
+
+x - delete character;
+u - undo;
+2x - delete 2 characters;
+u2x - undo 3 deletes;
+
+dw - delete word;
+dd - delete line;
+3dd - delete 3 lines;
+
+w - go to 1 word;
+e - go to end of word;
+3w - go to 3words;
+
+b - go back to word;
+3b - go back to 3 words;
+
+p - input deleted or copied line or word;
+
+r - replace character;
+
+ce - change this word;
+
+c$ - change all line;
+

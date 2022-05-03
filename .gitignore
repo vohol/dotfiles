@@ -1,3 +1,10 @@
 *
 !.gitignore
 !README.md
+!/.screenshots
+!neovim-cheets.txt
+!/.doom.d
+!/goCode/Templates
+!/config/fish/conf.d
+!/.config/nvim
+!/.config/tmux
