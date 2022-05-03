@@ -21,8 +21,3 @@
 !.config/fish/
 !.config/fish/conf.d/
 !.config/fish/conf.d/*
-
-!goCode/
-!goCode/Templates/
-!goCode/Templates/**/
-!goCode/Templates/**/*.*
