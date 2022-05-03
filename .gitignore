@@ -13,12 +13,15 @@
 !/.doom.d/
 !/.doom.d/*
 
-!/goCode/
-/goCode/*
-!goCode/Templates/
-!goCode/Templates/*
+!/.config/
+/.config/*
+!/.config/fish/
+/.config/fish/*
+!/.config/fish/conf.d/
+!/.config/fish/conf.d/*
 
 
-config/fish/conf.d/
+
+.config/fish/conf.d/
 .config/nvim/
 .config/tmux/
