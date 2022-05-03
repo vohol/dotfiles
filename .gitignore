@@ -10,8 +10,15 @@
 !/.screenshots/
 !/.screenshots/*
 
-!.doom.d/
-goCode/Templates/
+!/.doom.d/
+!/.doom.d/*
+
+!/goCode/
+/goCode/*
+!goCode/Templates/
+!goCode/Templates/*
+
+
 config/fish/conf.d/
 .config/nvim/
 .config/tmux/
