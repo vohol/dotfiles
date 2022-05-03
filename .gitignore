@@ -1,5 +1,3 @@
-*/*
-*.*
 *
 
 !.gitignore
@@ -7,21 +5,24 @@
 !neovim-cheets.txt
 
 
-!/.screenshots/
-!/.screenshots/*
+!.screenshots/
+!.screenshots/*
 
-!/.doom.d/
-!/.doom.d/*
+!.doom.d/
+!.doom.d/*
 
-!/.config/
-/.config/*
-!/.config/fish/
-/.config/fish/*
-!/.config/fish/conf.d/
-!/.config/fish/conf.d/*
+!.config/
+!.config/nvim/
+!.config/nvim/*
 
+!.config/tmux/
+!.config/tmux/*
 
+!.config/fish/
+!.config/fish/conf.d/
+!.config/fish/conf.d/*
 
-.config/fish/conf.d/
-.config/nvim/
-.config/tmux/
+!goCode/
+!goCode/Templates/
+!goCode/Templates/**/
+!goCode/Templates/**/*.*
