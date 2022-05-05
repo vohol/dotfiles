@@ -36,3 +36,9 @@ alias emacs="emacsclient -c -a 'emacs'"
 
 # Changing "ls" to "exa"
 alias ls='exa -1 --color=always --group-directories-first' # my preferred listing
+
+# to go to directories and then show folders & files inside 
+function cd 
+  command cd $argv; tree -L 1 $argv
+end
+
