@@ -37,8 +37,21 @@ alias emacs="emacsclient -c -a 'emacs'"
 # Changing "ls" to "exa"
 alias ls='exa -1 --color=always --group-directories-first' # my preferred listing
 
-# to go to directories and then show folders & files inside 
+# to go to directories and then show folders & files inside
+functions -c cd orig_cd # copies cd to orig_cd
 function cd 
-  command cd $argv; tree -L 1 $argv
+  orig_cd $argv; tree -L 1
+  #cd $argv && tree -L 1
 end
 
+#automatic recursive copy for directories.
+function copy
+    set count (count $argv | tr -d \n)
+    if test "$count" = 2; and test -d "$argv[1]"
+        set from (echo $argv[1] | trim-right /)
+        set to (echo $argv[2])
+        command cp -i -r $from $to
+    else
+        command cp -i $argv
+    end
+end
