@@ -29,8 +29,17 @@ return require("packer").startup(function()
 		use("williamboman/nvim-lsp-installer") --> Companion plugin for lsp-config, allows us to seamlesly install language servers
 		use("jose-elias-alvarez/null-ls.nvim") --> inject lsp diagnistocs, formattings, code actions, and more ...
 		use("onsails/lspkind-nvim") --> vscode-like pictograms for neovim lsp completion items
-		use("hrsh7th/nvim-cmp") --> Autocompletion plugin
-		use("hrsh7th/cmp-nvim-lsp") --> LSP source for nvim-cmp
-		use("saadparwaiz1/cmp_luasnip") --> Snippets source for nvim-cmp
-		use("L3MON4D3/LuaSnip") --> Snippets plugin
+	
+		  -- cmp plugins
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+
+  -- snippets
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
 end)
