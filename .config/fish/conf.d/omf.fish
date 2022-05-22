@@ -18,6 +18,7 @@ alias neo='neofetch' #neofetch
 alias c='clear'
 alias vimhelp='cat neovim-cheets.txt' #open in terminal vim commands
 alias sassw='sass scss/style.scss css/style.css --watch'
+alias gosleep='sudo dnf clean all && sudo dnf update -y && flatpak update && shutdown'
 
 #to create parent directories as needed (if parent do not already exits) and to display a message for each created directory
 alias mkdir='mkdir -pv'
@@ -28,11 +29,6 @@ alias rm='rm -v'
 
 # vim and emacs
 alias vim='nvim'
-alias doomsync="~/.emacs.d/bin/doom sync"
-alias doomdoctor="~/.emacs.d/bin/doom doctor"
-alias doomupgrade="~/.emacs.d/bin/doom upgrade"
-alias doompurge="~/.emacs.d/bin/doom purge"
-alias emacs="emacsclient -c -a 'emacs'"
 
 # Changing "ls" to "exa"
 alias ls='exa -1 --color=always --group-directories-first' # my preferred listing
