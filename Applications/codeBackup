@@ -1,0 +1,6 @@
+#!/bin/sh
+today=`date +%m-%d-%Y`
+cd /home/uarenotprepared/goCode
+git add .
+git commit -m "backup $today"
+git push
