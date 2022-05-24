@@ -72,7 +72,6 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-/*--------------------*/
 '
 
 mkdir $proj_name
@@ -94,3 +93,14 @@ echo $mixins_scss > scss/_mixins.scss
 touch js/script.js
 
 echo "Project $proj_name has been created!"
+
+open_code=y
+[[ -t 0 ]] &&
+read -n 1 -p $'\e[1;32m
+Open created project by VS Code? (Y/n)\e[0m ' open_code
+if [[ $open_code =~ ^(y|Y|)$ ]]
+then
+    code .
+fi
+
+kill $PPID
