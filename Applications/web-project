@@ -96,7 +96,7 @@ echo "Project $proj_name has been created!"
 
 open_code=y
 [[ -t 0 ]] &&
-read -n 1 -p $'\e[1;32m
+read -n 1 -p $'\e[1;33m
 Open created project by VS Code? (Y/n)\e[0m ' open_code
 if [[ $open_code =~ ^(y|Y|)$ ]]
 then
