@@ -19,6 +19,7 @@ alias c='clear'
 alias vimhelp='cat neovim-cheets.txt' #open in terminal vim commands
 alias sassw='sass scss/style.scss css/style.css --watch'
 alias gosleep='sudo dnf clean all && sudo dnf update -y && flatpak update && shutdown'
+alias xampp='sudo /opt/lampp/lampp'
 
 #to create parent directories as needed (if parent do not already exits) and to display a message for each created directory
 alias mkdir='mkdir -pv'
